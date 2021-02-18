@@ -1,0 +1,43 @@
+*{
+    padding:0;
+    margin:0;
+}
+.content{
+    background-color:#CDF7F2;
+    height:2000px;
+}
+input[type=checkbox] {
+    transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    padding: 10px;
+}
+label{
+    font-size:40px;
+    padding:50px;
+     margin-right:50px;
+}
+.addRow,
+.deleteRow{
+    margin-top:40px;
+
+}
+.itemTable{
+    margin-top:100px;
+    padding:10px;
+    font-size:50px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+.tableBody tr {
+    font-weight:normal;
+    font-size:40px;
+        text-align:center;
+}
+.tableBody tr:hover {
+    background-color:  #8eb8b5 ;
+}
+.disabledbutton {
+    pointer-events: none;
+    opacity: 0.4;
+}

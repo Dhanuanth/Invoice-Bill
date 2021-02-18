@@ -1,0 +1,12 @@
+{
+"customers":[
+  {"name":"athulyaT", "gst":"543654","discount": 12},
+  {"name":"chandraT", "gst":"126573","discount": 10},
+  {"name":"centuryT", "gst":"324234","discount": 8}
+],
+  "items": [
+    {"name": "winner", "rate": 52} ,
+    {"name": "winnerP", "rate": 55}
+  ]
+}
+

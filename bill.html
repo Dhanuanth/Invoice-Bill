@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kairali Garments</title>
+    <link rel="stylesheet" type="text/css" href="bill.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="bill.js" type="module"></script>
+</head>
+<body>
+
+    <div class="content">
+        <div class="partOne" style="display:flex; height:350px;">
+            <div class="Details" style="height:100%;width:60%">
+                <h1 id="companyName" style="letter-spacing:20px;font-weight:bold;font-size:60px; font-family:titillium;">KAIRALI GARMENTS</h1>
+                <h2 id="companyAddress" style="letter-spacing:10px;font-weight:bold;font-size:30px; font-family:titillium;">P.O. Kuttikkakam,Edakkad <br>Kannur , 670663</h2>
+                <p id="companyGst" style="font-size:50px; font-family:titillium; margin-top:50px"><span style="font-weight:bold;">GST : </span> 23458765GDF543</p>
+            </div>
+              <div class="Date" style="height:100%; width:40%;" >
+                  <div style=" margin-left:550px; margin-top:50px;">
+                      <p class="dateHead">Date &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:<span id="todayDate">wed 2 jan</span></p>
+                    <p class="dateHead">Invoice No. : <span id="invoiceTail"></span></p>
+                  </div>
+            </div>
+        </div>
+        <div class="separator">TAX INVOICE</div>
+        <!--///////////CUSTOMER DETAILS//////////////////////-->
+        <p style="text-align:center;font-size:30px;"><u>Customer Details</u></p>
+        <div class="partTwo" style="display:flex;height:250px;">
+            <div class="divOne" style="height:100%;width:50%;">
+                <p style="margin-top:30px;font-weight:bold;font-size:40px;">Name : <span id="customerName" >afsd</span> </p>
+                <p style="margin-top:30px;font-weight:bold;font-size:40px;">GSTIN: <span id="customerGst"></span>  </p>
+
+            </div>
+            <div class="divTwo" style="height:100%;width:50%;">
+                 <p style="margin-top:30px;font-weight:bold;font-size:40px;">Address :</p>
+            </div>
+         </div>
+        <hr style="border:4px solid black;">
+        <div class="partThree" style="max-height:1450px; text-transform:uppercase;">
+            <table class="table mainTable" >
+                <col style="width:20%">
+                <col style="width:10%">
+                <col style="width:10%">
+                <col style="width:10%">
+                <col style="width:10%">
+                <col style="width:10%">
+                <col style="width:10%">
+                <col style="width:10%">
+                <col style="width:10%">
+                <thead>
+                <tr style="height:20px; text-align:center; border-bottom:4px solid black;">
+                    <th>Item</th>
+                    <th>HSN</th>
+                    <th>quantity</th>
+                    <th>rate</th>
+                    <th>discount<span id="discount" style="font-size:35px;font-weight:normal;">@</span></th>
+                    <th>taxable</th>
+                    <th>sgst<span style="font-size:35px;font-weight:normal;">@2.5%</span></th>
+                    <th>cgst<span style="font-size:35px;font-weight:normal;">@2.5%</span></th>
+                    <th>total</th>
+                </tr>
+                </thead>
+                <tbody class="tableBody">
+                </tbody>
+                <tfoot style="text-align:center;">
+
+                  <td colspan="4" style="text-align:right;">
+                        total :
+                  </td>
+                 <td id="totalDiscount"></td>
+                 <td id="totalTax"></td>
+                 <td id="totalSGST"></td>
+                 <td id="totalCGST"></td>
+                 <td id="totalTotal"> </td>
+                </tfoot>
+
+            </table>
+            <div class="finalValues" style="display:flex;">
+                <div class="inRupees" style="width:75% ">
+                    <p style="font-size:40px;font-weight:bold; ">Rupees:</p>
+                </div>
+                <div class="inNumber" style="width:25%">
+                    <p style="font-size:40px;font-weight:bold;" >Taxable Amount :<span id="taxableAmount"></span></p>
+                    <p style="font-size:40px;font-weight:bold; ">Total Tax &nbsp&nbsp&nbsp&nbsp&nbsp:<span id="grandTax"></span></p>
+                    <p style="font-size:40px;font-weight:bold; ">Grand Total &nbsp&nbsp :<span id="grandTotal"></span></p>
+                </div>
+            </div>
+        </div>
+
+   </div>
+ <div class="signature" >
+            <p style="border-bottom: 4px solid #000 " ></p>
+            <p style="font-weight:bold; font-size:35px; padding:10px;">For Kairali Garments</p>
+            <p style="font-weight:normal; font-size:25px; margin-top:-20px;">(Authorised Signatory)</p>
+         </div>
+        <hr style="border:4px solid black;">
+         <p style="text-align:center;font-size:25px; letter-spacing:2px; ">Kairali Garments ,P.O. Kuttikkakam,Edakkad,Kannur,670663</p>
+
+    <script>
+
+      document.addEventListener("keypress", function(event) {
+
+                    if (event.keyCode == 112) {
+
+                         window.print();
+                     }
+         });
+
+</script>
+
+</body>
+</html>
